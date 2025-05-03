@@ -17,9 +17,9 @@ import java.util.UUID;
 public class WineOrderLineCreateDTO {
 
     @NotNull
-    private UUID beerId;
+    private UUID wineId;
 
-    @Min(value = 1, message = "Quantity On Hand must be greater than 0")
+    @Min(value = 1, message = "Quantity must be greater than 0")
     private Integer orderQuantity;
 
 }

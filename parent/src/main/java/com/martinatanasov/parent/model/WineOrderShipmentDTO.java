@@ -1,7 +1,6 @@
 package com.martinatanasov.parent.model;
 
 
-import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,7 +19,6 @@ public class WineOrderShipmentDTO {
 
     private Long version;
 
-    @NotBlank
     private String trackingNumber;
 
     private Timestamp createdDate;
