@@ -18,7 +18,7 @@ public interface WineOrderMapper {
     WineOrderShipmentDTO wineOrderShipmentToWineOrderShipmentDto(Shipment shipment);
 
     @Mapping(target = "order", ignore = true)
-    OrderLine beerOrderLineDtoToBeerOrderLine(WineOrderLineDTO wineOrderLineDTO);
+    OrderLine wineOrderLineDtoToWineOrderLine(WineOrderLineDTO wineOrderLineDTO);
 
     WineOrderLineDTO wineOrderLineToWineOrderLineDto(OrderLine orderLine);
 
